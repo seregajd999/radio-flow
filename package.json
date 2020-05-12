@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://gaserd.github.io/ecomerce-app/",
+  "homepage": "./",
   "scripts": {
     "start": "cross-env PORT=10888 react-scripts start",
     "build": "react-scripts build",
@@ -43,6 +43,7 @@
     "react-native-swift": "^1.2.3",
     "react-native-track-player": "^1.2.3",
     "react-player": "^2.0.1",
+    "react-soundplayer": "^1.0.4",
     "reaudio": "^0.1.8",
     "typeface-roboto": "0.0.75"
   },
