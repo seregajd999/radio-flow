@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
-import Reaudio from 'reaudio'
-import 'reaudio/build/index.css'
+import OAudioPlayer from '@oovui/audio-player-react';
 
-const playlist = [
-  {
-      id: '1',
-      source: 'http:\\air2.radiorecord.ru:9003\rr_320',
-      trackName: 'IIWII',
-      trackArtist: 'Joshua Iz',
-      trackImage: 'https://studio.bio/reaudio/images/VIZLP1.jpg',
-      loop: false
-  }
-]
+import { Media, Player, controls } from 'react-media-player'
+const { PlayPause, MuteUnmute } = controls
+
+
 
 export default class Main extends Component {
   render() {
@@ -22,10 +15,27 @@ export default class Main extends Component {
       <CssBaseline />
       <Container>
 
-        <div className="App">
-            <h1>Reaudio</h1>
-            <Reaudio playlist={playlist} />
+
+        <OAudioPlayer 
+        url = 'http:\\air2.radiorecord.ru:9003\rr_320'
+        title = "Record"
+        author = "укеукек" 
+        
+        />
+
+<Media>
+        <div className="media">
+          <div className="media-player">
+            <Player src="http:\\air2.radiorecord.ru:9003\rr_320" />
+          </div>
+          <div className="media-controls">
+            <PlayPause />
+            <MuteUnmute />
+          </div>
         </div>
+      </Media>
+  
+
 
       </Container>
     </React.Fragment>
