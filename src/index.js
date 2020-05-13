@@ -7,7 +7,7 @@ import bridge from '@vkontakte/vk-bridge';
 import App from './App';
 import './index.css';
 import '@vkontakte/vkui/dist/vkui.css';
-import 'antd/dist/antd.css';
+// import 'antd/dist/antd.css';
 // import registerServiceWorker from './sw';
 
 // Init VK App
